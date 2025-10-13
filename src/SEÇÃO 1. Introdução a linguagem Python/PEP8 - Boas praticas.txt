@@ -1,0 +1,91 @@
+ESTUDO DO PEP8
+
+Introdução ao PEP8 - Index of Python Enhancement Proposals 
+                    (Propostas de aprimoramento do PYthon)
+
+# digite no terminal import this e será carregado o poema Python
+
+" O Zen do Python, por Tim Peters
+
+Bonito é melhor que feio.
+Explícito é melhor que implícito.
+Simples é melhor que complexo.
+Complexo é melhor que complicado.
+Plano é melhor que aninhado.
+Esparso é melhor que denso.
+Legibilidade importa.
+Casos especiais não são especiais o suficiente para quebrar as regras.
+Embora a praticidade supere a pureza.
+Erros nunca devem passar silenciosamente.
+A menos que sejam explicitamente silenciados.
+Diante da ambiguidade, recuse a tentação de adivinhar.
+Deve haver uma — e de preferência apenas uma — maneira óbvia de fazer isso.
+Embora essa maneira possa não ser óbvia à primeira vista, a menos que você seja holandês.
+Agora é melhor que nunca.
+Embora nunca seja frequentemente melhor do que *agora*.
+Se a implementação for difícil de explicar, é uma má ideia.
+Se a implementação for fácil de explicar, pode ser uma boa ideia.
+Namespaces são uma ótima ideia — vamos fazer mais disso!"
+
+A ideia do PEP8 é que possamos escrever codigos de forma "Pythonica" (visualmente agradável/bonita).
+
+
+SUGESTÕES PYTHONISTAS:
+[1]- Utilize CamelCase para nomes de classes;
+   
+   * NOME SIMPLES           NOME COMPOSTO (CamelCase):
+    class Calculadora:      class CalculadoraCientifica:
+        codigo...              codigo...
+        ...                    ...
+
+[2]- Utilize nomes em minusculos para nomear funções, variaveis.
+
+    #Exemplo de função                  Exemplo de variaveis
+    def soma()                          * numero = 0
+        codigo...                       * numero_impar = 5
+        ...
+
+[3]- Utilize 4 espaços para identação de um codigo python (NÃO USE TAB)
+    Exemplo de identação em uma função:
+    if 'a' in 'banana':
+        print(a)
+
+[4]- Use Linhas em branco para separar funções e definições de classes com 2 linhas em branco.
+    Métodos dentro de uma classe devem ser separados com uma linha em branco.
+
+[5]- Imports
+    Imports devem ser sempre declaradas em linhas separadas
+
+    Evitar:                 Seguir:
+    import sys, os          import sys (pacote "modulo" completo)
+                            import os
+
+    Outra forma que não causa problemas:
+    from types import StringType, ListType (2 classes importadas do pacote types)
+
+    Caso tenha muitos imports de um mesmo pacote, faça o seguinte:
+    from types import(
+        StringType,
+        ListType,
+        SetType,
+        OutroType
+    )
+
+    Imports devem ser colocados no topo do arquivo, logo depois de comentarios e docstrings e
+    antes de variaveis globais.
+
+
+[6]- Espaços em expressões e instruções
+    Nao faça:                            Faça: 
+    funcao( algo[ 1 ], { outro: 2 })      funcao(algo[1], {outro:2})
+    algo (1)                              algo(1)
+    dict ['chave'] = lista [indice]       dict['chave'] = lista['indice']
+    x              = 2                    x = 2
+    y              = 3                    y = 3
+    variavel_longa = 65                   variavel_longa = 65
+
+
+[7]- Sempre termine uma instrução com uma nova linha (escreva a instrução e tecle Enter)
+    import this
+    |     (sempre fica uma linha em branco apos o ENTER)     
+Mais informações, consultar documentação do PEP8.
