@@ -1,7 +1,7 @@
 '''
 TIPO NUMERICO
 
-    Em Python, os tipos numéricos principais são int (inteiros), 
+    Em Python, os tipos numéricos principais são int (inteiros),
 float (números de ponto flutuante ou decimais) e complex (números complexos).
     O tipo numerico int (Inteiro): Representa números inteiros, positivos ou
 negativos, sem casas decimais (ex: 10, -5, 0).
@@ -30,5 +30,3 @@ print(type(numero))
 
 numeroGrande = 1_000_000_000  # Facilita a visualização
 print(numeroGrande)
-
-
